@@ -5,19 +5,19 @@ import Cabecalho from '../../containers/Cabecalho';
 import ProdutosCategoria from '../../containers/Lista/ProdutosCategoria';
 import Rodape from '../../containers/Rodape';
 
-//import { connect } from 'react-redux';
-//import actions from '../../redux/actions';
-//import initialize from '../../utils/initialize';
-//import callBaseData from '../../utils/callBaseData';
+import { connect } from 'react-redux';
+import actions from '../../redux/actions';
+import initialize from '../../utils/initialize';
+import callBaseData from '../../utils/callBaseData';
 
 class Categoria extends Component {
-    /*static async getInitialProps(ctx){
+    static async getInitialProps(ctx){
         initialize(ctx);
         return callBaseData([
             actions.fetchProdutosCategoria.bind(null, ctx.query.id),
             actions.fetchCategoria.bind(null, ctx.query.id)
         ], ctx);
-    }*/
+    }
 
     render(){
         const { categoria } = this.props;

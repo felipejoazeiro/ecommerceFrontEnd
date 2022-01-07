@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Produtos from '../../../components/Listas/Produtos';
 import Paginacao from '../../../components/Paginacao';
 
-//import { connect } from 'react-redux';
-//import actions from '../../../redux/actions';
+import { connect } from 'react-redux';
+import actions from '../../../redux/actions';
 
 
 class ProdutosCategoria extends Component {
